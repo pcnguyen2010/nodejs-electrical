@@ -6,7 +6,7 @@ ENV PORT=$PORT
 WORKDIR app
 #Install app dependencies
 COPY package*.json ./
-COPY cssS css
+COPY css css
 COPY image image
 COPY script script
 COPY view view
