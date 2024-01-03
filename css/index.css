@@ -1,0 +1,577 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section{
+    max-width: 1300px;
+    
+}
+/* Section Home */
+.home{
+    border: 1px solid gray;
+    
+    background-image: url("/laptop.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* Section About */
+.about{
+    padding: 0;
+    margin: auto;
+    height: 400px;
+    background-color: rgb(234, 244, 248);
+}
+
+/* Section Service */
+.service{
+    padding: 0;
+    margin: auto;
+    height: 100vh;
+    min-height: 600px;
+    background-color: rgb(75, 95, 102);
+}
+
+/* Section Contact */
+.contact{
+    padding: 0;
+    margin: auto;
+    padding-bottom: 0;
+    height: 60vh;
+    min-height: 600px;
+}
+
+/* Section Footer */
+.foot{
+    padding: 0;
+    margin: auto;
+    height: 5vh;
+    min-height: 5px;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    z-index: 10000;
+}
+
+.product{
+    padding: 0;
+    margin: auto;
+    height: 60vh;
+    min-height: 600px;
+    background-color: rgb(244, 249, 249);
+}
+
+nav{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover{
+    background-color: #f0f0f0;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+.menu-button{
+    display: none;
+}
+
+.glass-container{
+    height: 60%;
+    width: 30%;
+    margin: 10% 5%;
+    padding: 30px 50px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.005);
+    backdrop-filter: blur(50px);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.089);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: black;
+
+    font-family: Poppins, sans-serif;
+    font-size: 1.5vw;
+    text-align: justify;
+    line-height: 155%;
+}
+
+.glass-container h1{
+    padding-bottom: 25px;
+    letter-spacing: 5px;
+}
+
+dialog{
+    border: none;
+    left: 70%;
+    top: 10%;
+    height: 60vh;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.dialogImage{
+    left: 10%;
+    right: 10%;
+    top: 15%;
+    bottom: 5%;
+    height: 80vh;
+    width: 80%;
+    border-radius: 10px;
+    background-image: url("/about.avif");
+    background-size: cover;
+}
+
+.dialog-login{
+    background-color: rgba(255, 255, 255, 0.005);
+    backdrop-filter: blur(50px);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.089);
+}
+
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;  
+    
+}
+
+.wrapper h3{
+    padding-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.wrapper input{
+    height: 30px;
+    width: 100%;
+    margin-bottom: 10px;
+
+    background-color: rgba(255, 255, 255, 0.005);
+    border: 0.1px solid gray;
+}
+
+.wrapper button{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+
+.wrapper .button-close{
+    width: 100%;
+    text-align: right;
+}
+
+.wrapper .social-network{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+.about-div{
+    display: flex;
+}
+
+.about .left{
+    position: relative;
+    width: 50%;
+    height: 400px;
+    background-image: url("/about.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about .right{
+    width: 50%;
+    height: 100vh;
+    padding: 50px 50px;
+    font-family: Roboto, sans-serif;
+    font-size: 1.3vw;
+}
+
+.about .right .title{
+    letter-spacing: 5px;
+    border-bottom: 1px solid black;
+}
+
+.about .right .content{
+    padding-top: 20px;
+    text-indent: 5vw;
+}
+
+.service .title{
+    font-family: Roboto, sans-serif;
+    color: white;
+    letter-spacing: 5px;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.service .services{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.service .services .services-container{
+    margin-left: 20px;
+    padding: 30px 50px;
+    height: 70vh;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.005);
+    backdrop-filter: blur(50px);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.089);
+
+    color: white;
+    font-family: Roboto, sans-serif;
+    font-size: 1.3vw;
+    text-align: justify;
+    line-height: 155%;
+}
+
+.service .services .services-container:hover{
+    background-color: black;
+    backdrop-filter: blur(10px);
+    color: white;
+}
+
+.service .services .services-container p{
+    padding-top: 20px;
+    text-indent: 3vw;
+    font-size: 1.3vw;
+}
+
+.service .services .services-container h3{
+    letter-spacing: 2px;
+}
+
+.service .services .services-container div{
+    text-align: center;
+}
+
+.service .services .services-container a{
+    text-decoration: none;
+    background-color: transparent;
+    color: red;
+    font-size: 1.2vw;
+}
+
+.service .services .services-container button{
+    margin-top: 10%;
+    margin-left: 60%;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+    background-color: transparent;
+    border-top: 1px;
+    border-left: 1px;
+    border: 1px solid red;
+    border-color: red;
+}
+
+.contact .contacts{
+    display: flex;
+}
+
+.contact .left{
+    width: 50%;
+    height: 100vh;
+    padding-top: 7%;
+    padding-left: 5%;
+}
+
+.contact .right{
+    width: 50%;
+    height: 100vh;
+    padding-top: 7%;
+    padding-left: 5%;
+    background-color: rgb(234, 244, 248);
+}
+
+.contact .left h2{
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+.contact .address{
+    display: flex;
+    padding-top: 30px;
+}
+
+.contact .address span{
+    padding-right: 10px;
+    color: red;
+    font-size: 30px;
+}
+
+.contact .email{
+    display: flex;
+    padding-top: 30px;
+}
+
+.contact .email span{
+    padding-right: 10px;
+    color: red;
+    font-size: 25px;
+}
+
+.contact .phone{
+    display: flex;
+    padding-top: 30px;
+}
+
+.contact .phone span{
+    padding-right: 10px;
+    color: red;
+    font-size: 25px;
+}
+
+
+.contact .right .email input{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-color: transparent;
+}
+
+.contact .right .email textarea{
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    height: 7em;
+    width: 35em;
+}
+
+.contact .right button{
+    margin-top: 3%;
+    margin-left: 75%;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+    background-color: transparent;
+    border-top: 1px;
+    border-left: 1px;
+    border: 1px solid red;
+    border-color: red;
+    color: red;
+}
+
+.product .description{
+    padding-top: 50px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    height: 20vh;
+    letter-spacing: 3px;
+}
+
+.product .content{
+    display: flex;
+    height: 80vh;
+    justify-content: space-between;
+}
+
+.product .content .left{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product .content .left .top{
+    width: 100%;
+    height: 45%;
+    background-image: url("/electrical1.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product .content .left .bottom{
+    width: 100%;
+    height: 45%;
+    background-image: url("/electrical2.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product .content .middle{
+    width: 30%;
+    background-image: url("/plumbing1.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product .content .right{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product .content .right .top{
+    width: 100%;
+    height: 45%;
+    background-image: url("/hvac1.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product .content .right .bottom{
+    width: 100%;
+    height: 45%;
+    background-image: url("/hvac2.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* footer section styling */
+.footer{
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+.footer span a{
+    color: crimson;
+    text-decoration: none;
+}
+.footer span a:hover{
+    text-decoration: underline;
+}
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+
+    .menu-button{
+        display: block;
+    }
+}
+
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }   
+
+    .contact{
+        margin-top: 70px;
+        height: 80vh;
+        min-height: 800px;
+    }
+
+    .contact .contacts{
+        flex-direction: column;
+    }
+
+    .contact .left{
+        width: 100%;
+        height: 50vh;
+    }
+
+    .contact .right{
+        width: 100%;
+        height: 50vh;
+    }
+
+    .contact .right .email textarea{
+        width: 25em;
+    }
+
+    .service{
+        min-height: 900px;
+        text-align: center;
+    }
+
+    .service .services{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .service .services .services-container{
+        height: 35vh;
+        margin-bottom: 10px;
+    }
+}
