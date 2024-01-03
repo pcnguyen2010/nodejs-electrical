@@ -10,10 +10,6 @@ app.set('view engine','ejs');
 app.set('views','view');
 
 app.get('/',(req,res) =>{
-    res.send('<h1>Hello World!!!!</h1>')
-});
-
-app.get('/about',(req,res)=>{
     res.render('index',{title: 'Electrical HVAC Plumbing'});
 });
 

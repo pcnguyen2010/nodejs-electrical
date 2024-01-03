@@ -16,10 +16,10 @@ COPY index.js index.js
 #If you are building your code for production, RUN npm ci --omit=dev
 RUN npm install     
 
-EXPOSE $PORT
+EXPOSE 5900
 
 #CMD ["npm","run","dev"]    this command will be run in docker compose
-CMD npm run dev
+CMD npm run start
 
 #This is use with:   docker build . -t pnguyen/my-node-js-1 
 #to run with volumn: docker network create jenkins
