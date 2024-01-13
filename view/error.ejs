@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('header.ejs')  %>
+<body>
+    <section id="home" class="home">
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li  onclick="showLoginDialog()"><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    
+        <nav>
+            <ul>
+                <li class="hideOnMobile"><a href="#home">pNguyenHomeSevices Inc</a></li>
+                <li class="hideOnMobile"><a href="#about">About</a></li>
+                <li class="hideOnMobile"><a href="#service">Service</a></li>
+                <li class="hideOnMobile"><a href="#product">Product</a></li>
+                <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+                <li class="hideOnMobile" onclick="showLoginDialog()"><a href="#">Login</a></li>
+                <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section id="signup" class="signup">
+        <div id="signup-div" class="about-div">
+            <div id="left" class="left">
+    
+            </div>
+            <div id="right" class="right">
+                <h1>Oops! ERROR <%= message %></h1>
+            </div>
+        </div>
+    </section>
+
+    <%- include('index_footer.ejs') %>
+    <script src="/header.js"></script>
+</body>
+</html>

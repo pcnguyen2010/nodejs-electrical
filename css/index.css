@@ -520,6 +520,78 @@ dialog{
 .footer span a:hover{
     text-decoration: underline;
 }
+/* sing up page*/
+.signup{
+    padding: 0;
+    margin: auto;
+    height: 100vh;
+    background-color: rgb(234, 244, 248);
+}
+
+.signup-div{
+    display: flex;
+}
+
+.signup .left{
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    background-image: url("/about.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.signup .right{
+    width: 50%;
+    height: 100vh;
+    padding: 50px 50px;
+    font-family: Roboto, sans-serif;
+    font-size: 1.3vw;
+}
+
+.signup .right .title{
+    padding-top: 20px;
+    letter-spacing: 5px;
+    border-bottom: 1px solid black;
+}
+
+.signup .infor{
+    margin-top: 20px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.signup .infor label{
+    margin-top: 10px;
+}
+
+.signup .infor button{
+    margin-top: 20px;
+    padding: 5px;
+    width: 30%;
+    font-size: 16px;
+    background: red;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid red;
+    letter-spacing: 1px;
+}
+
+.signup a{
+    text-decoration: none;
+}
+
+.signup input[type="checkbox"]{
+    margin-bottom: 20px;
+}
+
+.signup .small{
+    font-size: 80%;
+    line-height: 0.5em;
+}
+
 
 @media(max-width: 800px){
     .hideOnMobile{
